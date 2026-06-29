@@ -61,6 +61,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    implementation("com.squareup.retrofit2:retrofit:2.12.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
     // استدعاء مكاتب Hilt بطريقة الـ Catalog الجديدة والمنظمة
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
